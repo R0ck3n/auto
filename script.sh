@@ -13,7 +13,6 @@ pushnumber=$((occurrences + 1))
 # Afficher le résultat
 echo "push n° $pushnumber du $date_jour." >> $fichier
 
-
-
-# Attendre que l'utilisateur appuie sur une touche pour continuer
-read -n1 -r -p "Appuyez sur une touche pour continuer..."
+git add .
+git commit -m "push n° $pushnumber du $date_jour."
+git push
