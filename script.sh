@@ -12,7 +12,7 @@ occurrences=$(grep -o "$date_jour" "$fichier" | wc -l)
 push_number=$((occurrences + 1))
 
 # Edite le fichier et ajoute une ligne
-echo "push n° $push_number du $date_jour." >> $fichier
+echo "push n° $push_number du $date_jour.  " >> $fichier
 
 # Push les modif sur gitHub
 git add .
