@@ -18,5 +18,3 @@ echo "push n° $push_number du $date_jour.  " >> $fichier
 git add .
 git commit -m "push n° $push_number du $date_jour."
 git push
-
-read -n 1
